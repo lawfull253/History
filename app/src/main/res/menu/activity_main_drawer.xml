@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_upload"
+                android:icon="@drawable/nav_upload"
+                android:title="Upload" />
+            <item
+                android:id="@+id/nav_download"
+                android:icon="@drawable/nav_download"
+                android:title="Download" />
+            <item
+                android:id="@+id/nav_delete_all"
+                android:icon="@drawable/delete_button"
+                android:title="Data Format" />
+        </menu>
+    </item>
+
+</menu>

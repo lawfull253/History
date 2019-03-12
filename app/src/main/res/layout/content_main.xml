@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <sub.kyung.history.CalendarView
+        android:id="@+id/layout_monthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </sub.kyung.history.CalendarView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/monthly_card_date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yyyy년 MM월 dd일"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/empty_monthly_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_gravity="right"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/monthly_create_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/create_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/not_empty_monthly_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/monthly_delete_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/delete_button"
+                android:layout_marginRight="5dp"/>
+
+            <ImageButton
+                android:id="@+id/monthly_modify_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/create_button"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/monthly_keyword_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="historiesKeyword"
+        android:textSize="8pt"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/monthly_open_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/open_button"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/horizon_line"/>
+</LinearLayout>
